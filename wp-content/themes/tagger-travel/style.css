@@ -340,6 +340,13 @@ body.header-open .bg-headerOpen{
     opacity: 1;
     visibility: visible;
 }
+.g-recaptcha{
+    margin-bottom: 47px;
+}
+.g-recaptcha>div{
+    margin: auto;
+}
+
 
 /*Header*/
 #header-menu{
