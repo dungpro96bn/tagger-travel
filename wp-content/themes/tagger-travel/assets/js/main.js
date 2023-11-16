@@ -122,6 +122,13 @@ jQuery(function ($) {
         $('html, body').animate({scrollTop: target_top}, 0, 'swing');
     }
 
+    var checkConfirm = document.getElementsByClassName('complete-message');
+    if (checkConfirm.length > 0) {
+        var scroll = $('.contact-block').offset();
+        var target_top = scroll.top - 50;
+        $('html, body').animate({scrollTop: target_top}, 0, 'swing');
+    }
+
 
 
 
