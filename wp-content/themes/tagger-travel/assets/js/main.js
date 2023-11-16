@@ -13,12 +13,11 @@ jQuery(function ($) {
         }
     ), 300);
 
-    setTimeout((function() {
-            $(document).ready(function () {
-                $(".c-charsTitle").attr("data-is-chars-title-playing", "true");
-            });
-        }
-    ), 300);
+    window.onload = function() {
+        setTimeout((function() {
+            $(".c-charsTitle").attr("data-is-chars-title-playing", "true");
+        }), 100);
+    };
 
 
     AOS.init({
@@ -34,6 +33,14 @@ jQuery(function ($) {
             var dest = url.split('#');var target = dest[1];
             var target_offset = $('#'+target).offset();
             var target_top = target_offset.top;
+            $('html, body').animate({scrollTop:target_top}, 500, 'swing');
+            return false;
+        });
+        $('#navList-menu .menu-item a').click(function(event){event.preventDefault();
+            var url = $(this).attr('href');
+            var dest = url.split('#');var target = dest[1];
+            var target_offset = $('#'+target).offset();
+            var target_top = target_offset.top - 70;
             $('html, body').animate({scrollTop:target_top}, 500, 'swing');
             return false;
         });
