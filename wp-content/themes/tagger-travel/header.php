@@ -50,17 +50,17 @@
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script>
-        $(document).ready(function(){
-            if($(".mw_wp_form_confirm").length > 0){
-                $(".g-recaptcha").remove();
-            }
-            if($(".mw_wp_form_complete").length > 0){
-                $(".g-recaptcha").remove();
-            }
-        })
-    </script>
+<!--    <script src="https://www.google.com/recaptcha/api.js" async defer></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function(){-->
+<!--            if($(".mw_wp_form_confirm").length > 0){-->
+<!--                $(".g-recaptcha").remove();-->
+<!--            }-->
+<!--            if($(".mw_wp_form_complete").length > 0){-->
+<!--                $(".g-recaptcha").remove();-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
 
 
     <?php if (is_admin_bar_showing()): ?>
