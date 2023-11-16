@@ -626,6 +626,31 @@
     line-height: 1.5;
     text-align: center;
 }
+#homepage .contact-block .complete-message{
+    background: #fff;
+    border-radius: 4px;
+    padding: 40px 60px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+#homepage .contact-block .complete-message p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+#homepage .contact-block .complete-message .backHome{
+    padding-top: 25px;
+}
+#homepage .contact-block .complete-message .backHome a{
+    width: 200px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin: auto;
+}
 
 
 
@@ -1108,7 +1133,12 @@
     #homepage .contact-block .contactInfo .rightContent .note-click img{
         margin-right: 8px;
     }
-
+    #homepage .contact-block .complete-message{
+        padding: 30px 15px;
+    }
+    #homepage .contact-block .complete-message p{
+        font-size: 16px;
+    }
 
 
 

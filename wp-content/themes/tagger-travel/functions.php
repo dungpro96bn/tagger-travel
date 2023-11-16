@@ -143,21 +143,18 @@ function languageString ()
     if ($current_language == 'vi') {
         $var['btn_contact'] = "Liên hệ";
         $var['text_privacy'] = "Chính sách bảo mật";
-        $var['contact_heading'] = "Yêu cầu qua email";
         $var['language_option_title'] = "Ngôn ngữ";
         $var['contact_note_click_tel'] = "Bạn có thể thực hiện cuộc gọi bằng cách nhấn vào số";
 
     } elseif ($current_language == 'en'){
         $var['btn_contact'] = "CONTACT";
         $var['text_privacy'] = "Privacy policy";
-        $var['contact_heading'] = "Email inquiries";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "You can make a call by tapping the number";
 
     } else{
         $var['btn_contact'] = "CONTACT";
         $var['text_privacy'] = "プライバシーポリシー";
-        $var['contact_heading'] = "メールでの問い合わせ";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "番号タップでお電話かけられます";
 

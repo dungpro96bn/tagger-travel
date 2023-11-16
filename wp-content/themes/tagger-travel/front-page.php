@@ -9,8 +9,6 @@ $current_language = $sitepress->get_current_language();
 
 <div id="homepage" class="">
 
-
-
     <div class="bannerHomepage">
         <h1 class="banner-heading">
             <div class="c-charsTitle c-kvTitle index_p-kvTitle js-charsTitle en" data-is-chars-title-playing="false">
@@ -168,23 +166,11 @@ $current_language = $sitepress->get_current_language();
                 <span class="ttl-ja">お問い合わせ</span>
             </h2>
             <div class="contact-main">
-                <div class="contact-title" data-aos="fade-up">
-                    <picture class="icon">
-                        <source media="(max-width: 767px)" srcset="/wp-content/uploads/contact_icon.png 2x">
-                        <source media="(min-width: 768px)" srcset="/wp-content/uploads/contact_icon.png 2x">
-                        <img class="sizes" src="/wp-content/uploads/contact_icon.png" alt="">
-                    </picture>
-                    <h3 class="title"><?php echo $var['contact_heading']; ?></h3>
-                </div>
-                <div class="form-main" data-aos="fade-up">
+                <div class="form-main">
                     <?php
-                    if ($current_language == "vi") {
-                        echo do_shortcode('[mwform_formkey key="99"]');
-                    } elseif ($current_language == "en"){
-                        echo do_shortcode('[mwform_formkey key="101"]');
-                    } else{
-                        echo do_shortcode('[mwform_formkey key="70"]');
-                    }?>
+                        $form_key = get_field('form_key');
+                        echo do_shortcode($form_key);
+                    ?>
                 </div>
                 <?php if( have_rows('contact_info') ): ?>
                     <?php while( have_rows('contact_info') ): the_row();?>
