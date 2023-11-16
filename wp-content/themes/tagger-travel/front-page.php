@@ -55,7 +55,7 @@ $current_language = $sitepress->get_current_language();
         <div class="inner">
             <h2 class="heading-block" data-aos="fade-up">
                 <span class="ttl-en">SERVICE</span>
-                <span class="ttl-ja"><?php echo $var['service_subHeading']; ?></span>
+                <span class="ttl-ja">私たちのサービスについて</span>
             </h2>
             <div class="serviceTab-scroll">
                 <ul class="serviceList-tabScroll">

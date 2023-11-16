@@ -18,7 +18,7 @@ jQuery(function ($) {
                 $(".c-charsTitle").attr("data-is-chars-title-playing", "true");
             });
         }
-    ), 200);
+    ), 300);
 
 
     AOS.init({
