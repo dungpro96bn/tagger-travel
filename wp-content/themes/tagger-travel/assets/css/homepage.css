@@ -574,8 +574,38 @@
     cursor: pointer;
     transition: .3s;
 }
+#homepage .contact-block .form-bottom .btn-form button{
+    width: 200px;
+    height: 56px;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+#homepage .contact-block .form-bottom .btn-form:hover button{
+    background: #000;
+}
+#homepage .contact-block .mw_wp_form_confirm .form-bottom .submit-back{
+    display: block;
+}
 #homepage .contact-block .form-bottom .btn-form:hover input{
     background: transparent;
+}
+#homepage .contact-block .mw_wp_form_send_error{
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.3);
+    font-size: 18px;
+    line-height: 1.5;
+}
+#homepage .contact-block .mw_wp_form_confirm .form-bottom .form-submit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 550px;
+    margin: auto;
 }
 #homepage .contact-block .form-bottom .submit-back{
     display: none;
@@ -1139,9 +1169,14 @@
     #homepage .contact-block .complete-message p{
         font-size: 16px;
     }
-
-
-
+    #homepage .contact-block .mw_wp_form_send_error{
+        padding: 30px 15px;
+        font-size: 16px;
+    }
+    #homepage .contact-block .mw_wp_form_confirm .form-bottom .form-submit{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
 
 
 

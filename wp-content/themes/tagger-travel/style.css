@@ -132,7 +132,8 @@ body * {
 body,
 input,
 textarea,
-select {
+select,
+button{
     font-family: 'Noto Sans CJK JP', sans-serif;
     /*font-family: noto-sans-cjk-jp, sans-serif;*/
 }
