@@ -1,4 +1,5 @@
 
+
 #homepage{
     overflow: hidden;
 }
@@ -6,6 +7,7 @@
 /*bannerHomepage*/
 #homepage .bannerHomepage{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 854px;
@@ -13,22 +15,33 @@
 }
 #homepage .bannerHomepage .banner-heading{
     text-align: center;
+    width: 100%;
 }
-#homepage .bannerHomepage .banner-heading span.t1{
+#homepage .bannerHomepage .c-charsTitle__texts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#homepage .bannerHomepage .banner-heading .t1{
     font-size: 80px;
     line-height: 96px;
-    display: inline-block;
     border-bottom: 2px solid #333333;
     padding-bottom: 13px;
     margin-bottom: 21px;
+    display: flex;
+    flex-wrap: wrap;
     letter-spacing: 1.6px;
+    position: relative;
 }
-#homepage .bannerHomepage .banner-heading span.t2{
-    display: block;
+#homepage .bannerHomepage .banner-heading .t2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 40px;
     line-height: 48px;
+    width: 100%;
     letter-spacing: 1px;
-    padding-left: 13px;
+    /*padding-left: 13px;*/
 }
 
 
@@ -88,6 +101,8 @@
 #homepage .service-block .serviceItem-tabScroll{
     border-left: 1px solid #E5E5E5;
     padding: 0 10px;
+    position: relative;
+    min-height: 290px;
 }
 #homepage .service-block .serviceItem-tabScroll:last-child{
     border-right: 1px solid #E5E5E5;
@@ -97,7 +112,7 @@
     text-align: center;
 }
 #homepage .service-block .serviceItem-tabScroll .serviceItem-inner{
-    max-width: 120px;
+    max-width: 140px;
     margin: auto;
 }
 #homepage .service-block .serviceItem-tabScroll .title{
@@ -109,6 +124,16 @@
     align-items: center;
     margin-bottom: 43px;
 }
+#homepage .service-block .serviceItem-tabScroll.text-vi .serviceItem-inner{
+    max-width: 160px;
+}
+#homepage .service-block .serviceItem-tabScroll.text-vi .title{
+    font-size: 16px;
+    line-height: 23px;
+}
+#homepage .service-block .serviceItem-tabScroll.text-ja:nth-child(4) .title{
+    padding: 0 10px;
+}
 #homepage .service-block .serviceItem-tabScroll .icon{
     display: block;
     margin-bottom: 17px;
@@ -116,6 +141,10 @@
 #homepage .service-block .serviceItem-tabScroll .icon-arrow{
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
 }
 #homepage .service-block .serviceItem-tabScroll .icon-arrow #Ellipse_3 circle:nth-child(2){
     fill: #000;
@@ -419,6 +448,28 @@
 #homepage .contact-block .field-group input::-ms-input-placeholder{
     color: #333333;
 }
+#homepage .contact-block .mw_wp_form_confirm .field-group .input-field{
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+#homepage .contact-block .error{
+    color: #f97171;
+    font-size: 14px;
+    margin-top: 3px;
+}
+#homepage .contact-block .box-policy .error{
+    position: absolute;
+    bottom: -22px;
+    width: 100%;
+    left: 0;
+}
+#homepage .contact-block .mw_wp_form_confirm .box-policy{
+    display: none;
+}
 #homepage .contact-block .box-policy{
     text-align: center;
     margin-bottom: 47px;
@@ -585,7 +636,8 @@
     #homepage .service-block .serviceContent-list{
         column-gap: 50px;
     }
-    #homepage .service-block .serviceItem-tabScroll .title{
+    #homepage .service-block .serviceItem-tabScroll .title,
+    #homepage .service-block .serviceItem-tabScroll.text-vi .title{
         font-size: 14px;
         line-height: 22px;
     }
@@ -626,13 +678,17 @@
     #homepage .service-block .serviceItem-tabScroll .icon{
         margin-bottom: 10px;
     }
-    #homepage .service-block .serviceItem-tabScroll .title {
+    #homepage .service-block .serviceItem-tabScroll .title,
+    #homepage .service-block .serviceItem-tabScroll.text-vi .title{
         font-size: 13px;
         line-height: 20px;
     }
     #homepage .service-block .serviceItem-tabScroll .icon-arrow svg{
         width: 26px;
         height: auto;
+    }
+    #homepage .service-block .serviceItem-tabScroll{
+        min-height: 230px;
     }
     #homepage .service-block .serviceContent-list {
         column-gap: 30px;
@@ -745,16 +801,15 @@
         height: 314px;
         padding-top: 40px;
     }
-    #homepage .bannerHomepage .banner-heading span.t1{
+    #homepage .bannerHomepage .banner-heading .t1{
         font-size: 35px;
         line-height: 42px;
-        display: inline-block;
         border-bottom: 1px solid #333333;
         padding-bottom: 5px;
         margin-bottom: 10px;
         letter-spacing: 0.8px;
     }
-    #homepage .bannerHomepage .banner-heading span.t2 {
+    #homepage .bannerHomepage .banner-heading .t2 {
         font-size: 17px;
         line-height: 20px;
         letter-spacing: 0.4px;
@@ -779,7 +834,15 @@
     }
     #homepage .service-block .serviceItem-tabScroll {
         border-left: 0;
-        padding: 0;
+        padding: 0 0 32px;
+        min-height: auto;
+    }
+    /*#homepage .service-block .serviceItem-tabScroll:nth-child(n+4){*/
+    /*    min-height: 236px;*/
+    /*}*/
+    #homepage .service-block .serviceItem-tabScroll .icon-arrow{
+        /*position: absolute;*/
+        /*bottom: 0;*/
     }
     #homepage .service-block .serviceList-tabScroll {
         display: grid;
@@ -805,6 +868,9 @@
         margin-bottom: 15px;
         padding: 0px 12px;
         text-align: left;
+    }
+    #homepage .service-block .serviceItem-tabScroll.text-vi .title{
+        text-align: center;
     }
     #homepage .service-block .serviceItem-tabScroll .icon {
         margin-bottom: -3px;

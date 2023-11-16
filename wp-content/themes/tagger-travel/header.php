@@ -35,6 +35,7 @@
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage-kv.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -48,6 +49,19 @@
     <!--file js-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+
+    <?php if (is_admin_bar_showing()): ?>
+        <style type="text/css" media="screen">
+            #header-menu .header-nav.scroll-header{
+                top: 32px !important;
+            }
+            @media screen and (max-width: 782px) {
+                #header-menu .header-nav.scroll-header{
+                    top: 46px !important;
+                }
+            }
+        </style>
+    <?php endif; ?>
 
 </head>
 
@@ -113,7 +127,7 @@ $current_language = $sitepress->get_current_language();
                     }
                 </script>
                 <div class="contact-action">
-                    <a class="contact-btn btn-green <?php if ($current_language != "vi") { echo "en";}?>" href="<?php echo home_url(); ?>/contact/"><?php echo $var['btn_contact']; ?></a>
+                    <a class="scroll contact-btn btn-green <?php if ($current_language != "vi") { echo "en";}?>" href="#contact"><?php echo $var['btn_contact']; ?></a>
                 </div>
             </div>
             <div class="btn-openMenu">

@@ -145,8 +145,6 @@ function languageString ()
         $var['text_privacy'] = "Chính sách bảo mật";
         $var['service_subHeading'] = "Về dịch vụ của chúng tôi";
         $var['contact_heading'] = "Yêu cầu qua email";
-        $var['contactInfo_title'] = "Truy vấn qua".$br."điện thoại";
-        $var['contactInfo_note'] = "Thứ Hai đến Thứ Sáu 09:30 đến 12:30 / 13:30 đến 17:30 Thứ Bảy, Chủ Nhật và ngày lễ: Nghỉ";
         $var['language_option_title'] = "Ngôn ngữ";
         $var['contact_note_click_tel'] = "Bạn có thể thực hiện cuộc gọi bằng cách nhấn vào số";
 
@@ -155,8 +153,6 @@ function languageString ()
         $var['text_privacy'] = "Privacy policy";
         $var['service_subHeading'] = "About our services";
         $var['contact_heading'] = "Email inquiries";
-        $var['contactInfo_title'] = "Inquiry by phone";
-        $var['contactInfo_note'] = "Monday to Friday 09:30 to 12:30 / 13:30 to 17:30 Saturdays, Sundays, and holidays: Closed";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "You can make a call by tapping the number";
 
@@ -165,8 +161,6 @@ function languageString ()
         $var['text_privacy'] = "プライバシーポリシー";
         $var['service_subHeading'] = "私たちのサービスについて";
         $var['contact_heading'] = "メールでの問い合わせ";
-        $var['contactInfo_title'] = "お電話での".$br."問い合わせ";
-        $var['contactInfo_note'] = "月～金　09:30～12:30 / 13:30～17:30 　土・日・祝日：定休";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "番号タップでお電話かけられます";
 
@@ -185,3 +179,13 @@ function urlLanguage (){
         echo $urlLanguage = home_url();
     endif;
 }
+
+
+function my_error_message( $error, $key ) {
+    if ( $key === 'full-name' || $key === 'email' || $key === 'tel' ) {
+        return '必須項目に入力してください';
+    }
+
+    return $error;
+}
+add_filter( 'mwform_error_message_mw-wp-form-70', 'my_error_message', 10, 3 );
