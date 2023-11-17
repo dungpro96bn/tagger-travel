@@ -18,6 +18,11 @@ endif;
     var checkSubmit = localStorage.getItem('sendmail');
     if(!checkSubmit){
         $(".contact-block").remove();
+        setTimeout((function() {
+            var strHref = window.location.href,
+                href = strHref.replace('complete/', '');
+            window.location.replace(href);
+        ), 1000);
     } else {
         setTimeout((function() {
                 localStorage.removeItem('sendmail');
