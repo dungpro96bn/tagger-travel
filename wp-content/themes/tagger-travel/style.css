@@ -341,11 +341,11 @@ body.header-open .bg-headerOpen{
     opacity: 1;
     visibility: visible;
 }
-.g-recaptcha{
-    margin-bottom: 47px;
-}
-.g-recaptcha>div{
+.cf7sr-g-recaptcha>div{
     margin: auto;
+}
+.cf7sr-recaptcha .wpcf7-not-valid-tip{
+    text-align: center;
 }
 
 
@@ -383,6 +383,9 @@ body.header-open .bg-headerOpen{
     transform: translate3d(0,-100%,0);
     transition: none;
     width: 100%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+body:not(.home) #header-menu .header-nav{
     box-shadow: 0 5px 10px rgba(0,0,0,.30);
 }
 #header-menu .header-nav.site-header--opening{

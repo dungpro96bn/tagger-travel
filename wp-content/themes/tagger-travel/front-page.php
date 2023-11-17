@@ -53,7 +53,7 @@ $current_language = $sitepress->get_current_language();
         <div class="inner">
             <h2 class="heading-block" data-aos="fade-up">
                 <span class="ttl-en">SERVICE</span>
-                <span class="ttl-ja">私たちのサービスについて</span>
+                <span class="ttl-ja"><?php echo $var['service_sub_title']; ?></span>
             </h2>
             <div class="serviceTab-scroll">
                 <ul class="serviceList-tabScroll">
@@ -124,7 +124,7 @@ $current_language = $sitepress->get_current_language();
         <div class="inner">
             <h2 class="heading-block" data-aos="fade-up">
                 <span class="ttl-en">COMPANY</span>
-                <span class="ttl-ja">会社情報</span>
+                <span class="ttl-ja"><?php echo $var['company_sub_title']; ?></span>
             </h2>
             <div class="companyInfo">
                 <ul class="companyInfo-list">
@@ -163,7 +163,7 @@ $current_language = $sitepress->get_current_language();
         <div class="inner">
             <h2 class="heading-block" data-aos="fade-up">
                 <span class="ttl-en">CONTACT</span>
-                <span class="ttl-ja">お問い合わせ</span>
+                <span class="ttl-ja"><?php echo $var['contact_sub_title']; ?></span>
             </h2>
             <div class="contact-main">
                 <div class="form-main">

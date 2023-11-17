@@ -350,40 +350,40 @@
 
 
 /*contact-block*/
-#homepage .contact-block{
+.contact-block{
     background: #007545;
     padding-top: 142px;
     padding-bottom: 160px;
 }
-#homepage .contact-block .heading-block{
+.contact-block .heading-block{
     color: #fff;
     margin-bottom: 46px;
 }
-#homepage .contact-block .contact-main{
+.contact-block .contact-main{
     width: 94%;
     max-width: 800px;
     margin: auto;
 }
-#homepage .contact-block .contact-title{
+.contact-block .contact-title{
     text-align: center;
     margin-bottom: 66px;
 }
-#homepage .contact-block .contact-title .title{
+.contact-block .contact-title .title{
     font-size: 32px;
     line-height: 47px;
     color: #fff;
     font-weight: bold;
 }
-#homepage .contact-block .contact-title .icon{
+.contact-block .contact-title .icon{
     display: block;
     margin-bottom: 24px;
 }
-#homepage .contact-block .field-group{
+.contact-block .field-group{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 32.5px;
 }
-#homepage .contact-block .field-group .title{
+.contact-block .field-group .title{
     font-size: 18px;
     line-height: 1.5;
     font-weight: bold;
@@ -391,11 +391,11 @@
     width: 235px;
     padding-top: 16px;
 }
-#homepage .contact-block .field-group .title label{
+.contact-block .field-group .title label{
     display: flex;
     align-items: center;
 }
-#homepage .contact-block .field-group .title .required{
+.contact-block .field-group .title .required{
     font-size: 13px;
     line-height: 19px;
     background: #000;
@@ -408,14 +408,14 @@
     border-radius: 4px;
     margin-left: 21px;
 }
-#homepage .contact-block.vi_en .field-group .title .required{
+.contact-block.vi_en .field-group .title .required{
     width: auto;
     padding: 0 6px;
 }
-#homepage .contact-block .field-group .input-container{
+.contact-block .field-group .input-container{
     width: calc(100% - 235px);
 }
-#homepage .contact-block .field-group input{
+.contact-block .field-group input{
     border: 1px solid #DDDDDD;
     height: 60px;
     background: #fff;
@@ -426,11 +426,11 @@
     font-size: 16px;
     transition: .3s;
 }
-#homepage .contact-block .field-group input:focus,
-#homepage .contact-block .field-group textarea:focus{
+.contact-block .field-group input:focus,
+.contact-block .field-group textarea:focus{
     box-shadow: 0 5px 10px rgba(0,0,0,.3);
 }
-#homepage .contact-block .field-group textarea{
+.contact-block .field-group textarea{
     border: 1px solid #DDDDDD;
     height: 236px;
     background: #fff;
@@ -442,13 +442,13 @@
     line-height: 1.5;
     transition: .3s;
 }
-#homepage .contact-block .field-group input::placeholder{
-    color: #333333;
+.contact-block .field-group input::placeholder{
+    color: #919191;
 }
-#homepage .contact-block .field-group input::-ms-input-placeholder{
-    color: #333333;
+.contact-block .field-group input::-ms-input-placeholder{
+    color: #919191;
 }
-#homepage .contact-block .mw_wp_form_confirm .field-group .input-field{
+.contact-block .mw_wp_form_confirm .field-group .input-field{
     display: flex;
     align-items: center;
     padding-top: 18px;
@@ -456,30 +456,42 @@
     line-height: 1.5;
     color: #fff;
 }
-#homepage .contact-block .error{
+.contact-block .wpcf7-spinner{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    margin: 0;
+    background-color: #ccc;
+}
+.contact-block .error,
+.contact-block .wpcf7-not-valid-tip{
     color: #f97171;
     font-size: 14px;
     margin-top: 3px;
 }
-#homepage .contact-block .box-policy .error{
+.contact-block .box-policy .error,
+.contact-block .box-policy .wpcf7-not-valid-tip{
     position: absolute;
     bottom: -22px;
     width: 100%;
     left: 0;
 }
-#homepage .contact-block .mw_wp_form_confirm .box-policy{
+.contact-block .mw_wp_form_confirm .box-policy{
     display: none;
 }
-#homepage .contact-block .box-policy{
+.contact-block .box-policy{
     text-align: center;
     margin-bottom: 47px;
 }
-#homepage .contact-block .box-policy .mwform-checkbox-field input{
+.contact-block .box-policy .mwform-checkbox-field input,
+.contact-block .box-policy .privacy input{
     position: absolute;
     opacity: 0;
     z-index: -99;
 }
-#homepage .contact-block .box-policy .mwform-checkbox-field-text{
+.contact-block .box-policy .mwform-checkbox-field-text,
+.contact-block .box-policy .privacy .wpcf7-list-item-label{
     position: absolute;
     font-size: 0;
     width: 100%;
@@ -487,7 +499,8 @@
     top: 0;
     left:0;
 }
-#homepage .contact-block .box-policy .mwform-checkbox-field-text:before{
+.contact-block .box-policy .mwform-checkbox-field-text:before,
+.contact-block .box-policy .privacy .wpcf7-list-item-label:before{
     content: "";
     position: absolute;
     width: 22px;
@@ -498,10 +511,11 @@
     left: 0;
     border-radius: 4px;
 }
-#homepage .contact-block .box-policy .mwform-checkbox-field-text:after {
+.contact-block .box-policy .mwform-checkbox-field-text:after,
+.contact-block .box-policy .privacy .wpcf7-list-item-label:after{
     content: "";
     position: absolute;
-    left: 8px;
+    left: 7.5px;
     top: 2.5px;
     width: 6px;
     height: 12px;
@@ -512,10 +526,17 @@
     transform: rotate(45deg);
     opacity: 0;
 }
-#homepage .contact-block .box-policy input:checked ~ .mwform-checkbox-field-text:after{
+.contact-block .box-policy input:checked ~ .mwform-checkbox-field-text:after,
+.contact-block .box-policy .privacy input:checked ~ .wpcf7-list-item-label:after{
     opacity: 1;
 }
-#homepage .contact-block .box-policy .policy-inner{
+.contact-block .box-policy .policy-inner .wpcf7-form-control-wrap{
+    position: static;
+}
+.contact-block .box-policy .privacy{
+    display: flex;
+}
+.contact-block .box-policy .policy-inner{
     display: inline-block;
     position: relative;
     color: #fff;
@@ -523,7 +544,7 @@
     line-height: 24px;
     padding-left: 40px;
 }
-#homepage .contact-block .box-policy .policy-inner a{
+.contact-block .box-policy .policy-inner a{
     position: relative;
     z-index: 9;
     text-decoration: underline;
@@ -531,16 +552,16 @@
     font-size: 16px;
     line-height: 24px;
 }
-#homepage .contact-block .form-bottom{
+.contact-block .form-bottom{
     padding-top: 35px;
 }
-#homepage .contact-block .form-bottom .btn-form{
+.contact-block .form-bottom .btn-form{
     text-align: center;
     width: 200px;
     margin: auto;
     position: relative;
 }
-#homepage .contact-block .form-bottom .btn-form:before{
+.contact-block .form-bottom .btn-form:before{
     content: "";
     position: absolute;
     width:0px;
@@ -552,7 +573,7 @@
     right: 0;
     transition: .3s;
 }
-#homepage .contact-block .form-bottom .btn-form:after{
+.contact-block .form-bottom .btn-form:after{
     content: "";
     position: absolute;
     width:0px;
@@ -564,7 +585,7 @@
     right: 0;
     transition: .3s;
 }
-#homepage .contact-block .form-bottom .btn-form input{
+.contact-block .form-bottom .btn-form input{
     width: 200px;
     height: 56px;
     border: 2px solid #000000;
@@ -574,7 +595,7 @@
     cursor: pointer;
     transition: .3s;
 }
-#homepage .contact-block .form-bottom .btn-form button{
+.contact-block .form-bottom .btn-form button{
     width: 200px;
     height: 56px;
     border: 2px solid #000000;
@@ -584,16 +605,16 @@
     cursor: pointer;
     transition: .3s;
 }
-#homepage .contact-block .form-bottom .btn-form:hover button{
+.contact-block .form-bottom .btn-form:hover button{
     background: #000;
 }
-#homepage .contact-block .mw_wp_form_confirm .form-bottom .submit-back{
+.contact-block .mw_wp_form_confirm .form-bottom .submit-back{
     display: block;
 }
-#homepage .contact-block .form-bottom .btn-form:hover input{
+.contact-block .form-bottom .btn-form:hover input{
     background: transparent;
 }
-#homepage .contact-block .mw_wp_form_send_error{
+.contact-block .mw_wp_form_send_error{
     background: #fff;
     padding: 40px;
     border-radius: 4px;
@@ -601,19 +622,22 @@
     font-size: 18px;
     line-height: 1.5;
 }
-#homepage .contact-block .mw_wp_form_confirm .form-bottom .form-submit{
+.contact-block .mw_wp_form_confirm .form-bottom .form-submit{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 550px;
     margin: auto;
 }
-#homepage .contact-block .form-bottom .submit-back{
+.contact-block .form-bottom .form-submit{
+    margin-top: 60px;
+}
+.contact-block .form-bottom .submit-back{
     display: none;
 }
-#homepage .contact-block .form-main{
+.contact-block .form-main{
     margin-bottom: 121px;
 }
-#homepage .contact-block .contactInfo{
+.contact-block .contactInfo{
     background: #fff;
     display: flex;
     flex-wrap: wrap;
@@ -622,55 +646,55 @@
     padding-bottom: 40px;
     border-radius: 4px;
 }
-#homepage .contact-block .contactInfo .leftContent{
+.contact-block .contactInfo .leftContent{
     width: 30%;
     text-align: center;
     border-right: 1px solid #E5E5E5;
     padding-top: 15px;
     padding-bottom: 18px;
 }
-#homepage .contact-block .contactInfo .leftContent .title{
+.contact-block .contactInfo .leftContent .title{
     font-size: 22px;
     line-height: 1.5;
     font-weight: bold;
 }
-#homepage .contact-block .contactInfo .leftContent .icon-tel{
+.contact-block .contactInfo .leftContent .icon-tel{
     margin-bottom: 25px;
 }
-#homepage .contact-block .contactInfo .rightContent{
+.contact-block .contactInfo .rightContent{
     width: 70%;
     padding: 0 30px 10px;
 }
-#homepage .contact-block .contactInfo .rightContent .note-click{
+.contact-block .contactInfo .rightContent .note-click{
     display: none;
 }
-#homepage .contact-block .contactInfo .rightContent .tel{
+.contact-block .contactInfo .rightContent .tel{
     font-size: 50px;
     line-height: 1.22;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 16px;
 }
-#homepage .contact-block .contactInfo .rightContent .note{
+.contact-block .contactInfo .rightContent .note{
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
 }
-#homepage .contact-block .complete-message{
+.contact-block .complete-message{
     background: #fff;
     border-radius: 4px;
     padding: 40px 60px;
     box-shadow: 0 5px 10px rgba(0,0,0,.3);
 }
-#homepage .contact-block .complete-message p{
+.contact-block .complete-message p{
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 12px;
 }
-#homepage .contact-block .complete-message .backHome{
+.contact-block .complete-message .backHome{
     padding-top: 25px;
 }
-#homepage .contact-block .complete-message .backHome a{
+.contact-block .complete-message .backHome a{
     width: 200px;
     height: 56px;
     display: flex;
@@ -680,6 +704,13 @@
     line-height: 20px;
     color: #fff;
     margin: auto;
+}
+.contact-block .wpcf7 form.invalid .wpcf7-response-output{
+    background: #fff;
+    border-color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 60px 0 0;
 }
 
 
@@ -802,36 +833,36 @@
 
 
     /*contact-block*/
-    #homepage .contact-block .contact-title .title {
+    .contact-block .contact-title .title {
         font-size: 26px;
         line-height: 38px;
         color: #fff;
         font-weight: bold;
     }
-    #homepage .contact-block .field-group .title{
+    .contact-block .field-group .title{
         font-size: 16px;
     }
-    #homepage .contact-block .field-group input{
+    .contact-block .field-group input{
         font-size: 14px;
         height: 50px;
     }
-    #homepage .contact-block .field-group textarea{
+    .contact-block .field-group textarea{
         font-size: 14px;
         height: 200px;
     }
-    #homepage .contact-block .contactInfo .rightContent .tel{
+    .contact-block .contactInfo .rightContent .tel{
         font-size: 40px;
     }
-    #homepage .contact-block .contactInfo .rightContent .note{
+    .contact-block .contactInfo .rightContent .note{
         font-size: 14px;
     }
-    #homepage .contact-block .contactInfo .leftContent .title{
+    .contact-block .contactInfo .leftContent .title{
         font-size: 18px;
     }
-    #homepage .contact-block .contact-main{
+    .contact-block .contact-main{
         max-width: 700px;
     }
-    #homepage .contact-block .contact-title .icon img{
+    .contact-block .contact-title .icon img{
         width: 36px;
     }
 
@@ -1055,53 +1086,53 @@
 
 
     /*contact-block*/
-    #homepage .contact-block {
+    .contact-block {
         background: #007545;
         padding-top: 61px;
         padding-bottom: 80px;
     }
-    #homepage .contact-block .contact-main {
+    .contact-block .contact-main {
         max-width: 100%;
         width: 100%;
     }
-    #homepage .contact-block .contact-title {
+    .contact-block .contact-title {
         margin-bottom: 40px;
     }
-    #homepage .contact-block .contact-title .icon img {
+    .contact-block .contact-title .icon img {
         width: auto;
     }
-    #homepage .contact-block .heading-block {
+    .contact-block .heading-block {
         color: #fff;
         margin-bottom: 62px;
     }
-    #homepage .contact-block .contact-title .title {
+    .contact-block .contact-title .title {
         font-size: 22px;
         line-height: 33px;
     }
-    #homepage .contact-block .field-group .title {
+    .contact-block .field-group .title {
         font-size: 18px;
         width: 100%;
         padding: 0;
         margin-bottom: 16px;
     }
-    #homepage .contact-block .field-group .input-container {
+    .contact-block .field-group .input-container {
         width: 100%;
     }
-    #homepage .contact-block .field-group input {
+    .contact-block .field-group input {
         font-size: 16px;
         height: 60px;
     }
-    #homepage .contact-block .field-group .title .required{
+    .contact-block .field-group .title .required{
         margin-left: 16px;
     }
-    #homepage .contact-block .field-group{
+    .contact-block .field-group{
         margin-bottom: 24px;
     }
-    #homepage .contact-block .field-group textarea {
+    .contact-block .field-group textarea {
         font-size: 16px;
         height: 300px;
     }
-    #homepage .contact-block .box-policy{
+    .contact-block .box-policy{
         background: #048953;
         border-radius: 4px;
         height: 80px;
@@ -1110,13 +1141,13 @@
         justify-content: center;
         margin-bottom: 56px;
     }
-    #homepage .contact-block .form-bottom {
+    .contact-block .form-bottom {
         padding-top: 40px;
     }
-    #homepage .contact-block .form-main {
+    .contact-block .form-main {
         margin-bottom: 96px;
     }
-    #homepage .contact-block .contactInfo .leftContent {
+    .contact-block .contactInfo .leftContent {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid #E5E5E5;
@@ -1125,34 +1156,34 @@
         border-right: 0;
         margin-bottom: 24px;
     }
-    #homepage .contact-block .contactInfo .leftContent .title {
+    .contact-block .contactInfo .leftContent .title {
         font-size: 22px;
     }
-    #homepage .contact-block .contactInfo .leftContent .title br{
+    .contact-block .contactInfo .leftContent .title br{
         display: none;
     }
-    #homepage .contact-block .contactInfo .leftContent .icon-tel {
+    .contact-block .contactInfo .leftContent .icon-tel {
         margin-bottom: 16px;
     }
-    #homepage .contact-block .contactInfo{
+    .contact-block .contactInfo{
         padding: 29px 16px 42px;
     }
-    #homepage .contact-block .contactInfo .rightContent {
+    .contact-block .contactInfo .rightContent {
         width: 100%;
         padding: 0;
     }
-    #homepage .contact-block .contactInfo .rightContent .tel {
+    .contact-block .contactInfo .rightContent .tel {
         font-size: 34px;
         letter-spacing: 0.6px;
         white-space: nowrap;
         margin-bottom: 21px;
     }
-    #homepage .contact-block .contactInfo .rightContent .note {
+    .contact-block .contactInfo .rightContent .note {
         font-size: 16px;
         max-width: 320px;
         margin: 0 auto 30px;
     }
-    #homepage .contact-block .contactInfo .rightContent .note-click{
+    .contact-block .contactInfo .rightContent .note-click{
         display: flex;
         padding-right: 13px;
         font-size: 18px;
@@ -1160,20 +1191,20 @@
         align-items: center;
         justify-content: center;
     }
-    #homepage .contact-block .contactInfo .rightContent .note-click img{
+    .contact-block .contactInfo .rightContent .note-click img{
         margin-right: 8px;
     }
-    #homepage .contact-block .complete-message{
+    .contact-block .complete-message{
         padding: 30px 15px;
     }
-    #homepage .contact-block .complete-message p{
+    .contact-block .complete-message p{
         font-size: 16px;
     }
-    #homepage .contact-block .mw_wp_form_send_error{
+    .contact-block .mw_wp_form_send_error{
         padding: 30px 15px;
         font-size: 16px;
     }
-    #homepage .contact-block .mw_wp_form_confirm .form-bottom .form-submit{
+    .contact-block .mw_wp_form_confirm .form-bottom .form-submit{
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
     }

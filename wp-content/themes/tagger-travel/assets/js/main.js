@@ -13,15 +13,33 @@ jQuery(function ($) {
         }
     ), 300);
 
-    window.onload = function() {
-        $(".c-charsTitle").attr("data-is-chars-title-playing", "true");
-    };
+    setTimeout((function() {
+            $(".c-charsTitle").attr("data-is-chars-title-playing", "true");
+        }
+    ), 500);
+
+    // window.onload = function() {
+    //
+    // };
 
 
     AOS.init({
         once: true,
         duration: 1000,
         delay: 0,
+    });
+
+    setInterval(function () {
+        if($(".wpcf7-form").hasClass("sent")){
+            var strHref = window.location.href,
+                href = strHref.replace('confirm/', '');
+            $(".wpcf7-form").removeClass("sent");
+            window.location.replace(href + 'complete/');
+        }
+    }, 100);
+
+    $(".contact-block .mw_wp_form_confirm .submit-form").click(function () {
+        localStorage.setItem('sendmail', 'complete');
     });
 
     //scroll
@@ -139,6 +157,10 @@ jQuery(function ($) {
         var target_top = scroll.top - 50;
         $('html, body').animate({scrollTop: target_top}, 0, 'swing');
     }
+
+    $(".form-bottom .btn-form input").click(function () {
+        localStorage.removeItem("submitBack");
+    })
 
     // let isRecaptchaValidated = false;
     //

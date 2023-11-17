@@ -145,18 +145,27 @@ function languageString ()
         $var['text_privacy'] = "Chính sách bảo mật";
         $var['language_option_title'] = "Ngôn ngữ";
         $var['contact_note_click_tel'] = "Bạn có thể thực hiện cuộc gọi bằng cách nhấn vào số";
+        $var['service_sub_title'] = "Dịch vụ";
+        $var['company_sub_title'] = "Tổng quan công ty";
+        $var['contact_sub_title'] = "Liên Hệ";
 
     } elseif ($current_language == 'en'){
         $var['btn_contact'] = "CONTACT";
         $var['text_privacy'] = "Privacy policy";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "You can make a call by tapping the number";
+        $var['service_sub_title'] = "Our Service";
+        $var['company_sub_title'] = "Overview";
+        $var['contact_sub_title'] = "Contact us";
 
     } else{
         $var['btn_contact'] = "CONTACT";
         $var['text_privacy'] = "プライバシーポリシー";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "番号タップでお電話かけられます";
+        $var['service_sub_title'] = "私たちのサービスについて";
+        $var['company_sub_title'] = "会社情報";
+        $var['contact_sub_title'] = "お問い合わせ";
 
     }
 
