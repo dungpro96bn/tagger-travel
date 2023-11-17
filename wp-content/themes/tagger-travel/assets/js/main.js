@@ -147,28 +147,32 @@ jQuery(function ($) {
         $('html, body').animate({scrollTop: target_top}, 0, 'swing');
     }
 
-    // $(".form-bottom .btn-form button").click(function () {
-    //     localStorage.setItem('submitBack', 'YES');
-    // });
+    $(".contact-block .form-bottom .btn-form input").click(function () {
+        localStorage.setItem('backForm', 'YES');
+    });
 
-    // var submitBack = localStorage.getItem('submitBack');
-    // if (submitBack == "YES") {
-    //     var scroll = $('.contact-block').offset();
-    //     var target_top = scroll.top - 50;
-    //     $('html, body').animate({scrollTop: target_top}, 0, 'swing');
-    // }
-
-    localStorage.removeItem("submitBack");
+    var submitBack = localStorage.getItem('backForm');
+    if (submitBack == "YES") {
+        var scroll = $('.contact-block').offset();
+        var target_top = scroll.top - 50;
+        $('html, body').animate({scrollTop: target_top}, 0, 'swing');
+    }
 
     $(document).ready(function () {
         var checkItem = document.getElementsByClassName('mw_wp_form_complete');
         if(checkItem.length <= 0){
             localStorage.removeItem('sendmail');
         }
+
+        var checkHome = document.getElementsByClassName('home');
+        if(checkHome.length <= 0){
+            localStorage.removeItem("submitBack");
+        }
     });
 
     $(".backHome a").click(function () {
         localStorage.removeItem('sendmail');
+        localStorage.removeItem("submitBack");
     });
 
 

@@ -585,7 +585,7 @@
     right: 0;
     transition: .3s;
 }
-.contact-block .form-bottom .btn-form input{
+.contact-block .form-bottom .submit-form input{
     width: 200px;
     height: 56px;
     border: 2px solid #000000;
@@ -595,7 +595,7 @@
     cursor: pointer;
     transition: .3s;
 }
-.contact-block .form-bottom .btn-form button{
+.contact-block .form-bottom .submit-back input{
     width: 200px;
     height: 56px;
     border: 2px solid #000000;
@@ -605,14 +605,14 @@
     cursor: pointer;
     transition: .3s;
 }
-.contact-block .form-bottom .btn-form:hover button{
-    background: #000;
+.contact-block .form-bottom .submit-form:hover input{
+    background: transparent;
 }
 .contact-block .mw_wp_form_confirm .form-bottom .submit-back{
     display: block;
 }
-.contact-block .form-bottom .btn-form:hover input{
-    background: transparent;
+.contact-block .form-bottom .submit-back:hover input{
+    background: #000;
 }
 .contact-block .mw_wp_form_send_error{
     background: #fff;
