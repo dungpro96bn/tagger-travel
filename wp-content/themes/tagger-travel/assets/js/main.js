@@ -166,13 +166,13 @@ jQuery(function ($) {
 
         var checkHome = document.getElementsByClassName('home');
         if(checkHome.length <= 0){
-            localStorage.removeItem("submitBack");
+            localStorage.removeItem("backForm");
         }
     });
 
     $(".backHome a").click(function () {
         localStorage.removeItem('sendmail');
-        localStorage.removeItem("submitBack");
+        localStorage.removeItem("backForm");
     });
 
 

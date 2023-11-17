@@ -15,7 +15,7 @@ endif;
 ?>
 
 <script>
-    localStorage.removeItem('submitBack');
+    localStorage.removeItem('backForm');
     var checkSubmit = localStorage.getItem('sendmail');
     if(!checkSubmit){
         $(".contact-block").remove();
