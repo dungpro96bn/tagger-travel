@@ -160,5 +160,16 @@ jQuery(function ($) {
 
     localStorage.removeItem("submitBack");
 
+    $(document).ready(function () {
+        var checkItem = document.getElementsByClassName('mw_wp_form_complete');
+        if(checkItem.length <= 0){
+            localStorage.removeItem('sendmail');
+        }
+    });
+
+    $(".backHome a").click(function () {
+        localStorage.removeItem('sendmail');
+    });
+
 
 });
