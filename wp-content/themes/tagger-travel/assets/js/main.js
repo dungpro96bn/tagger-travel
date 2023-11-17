@@ -147,66 +147,18 @@ jQuery(function ($) {
         $('html, body').animate({scrollTop: target_top}, 0, 'swing');
     }
 
-    $(".form-bottom .btn-form button").click(function () {
-        localStorage.setItem('submitBack', 'YES');
-    });
+    // $(".form-bottom .btn-form button").click(function () {
+    //     localStorage.setItem('submitBack', 'YES');
+    // });
 
-    var submitBack = localStorage.getItem('submitBack');
-    if (submitBack == "YES") {
-        var scroll = $('.contact-block').offset();
-        var target_top = scroll.top - 50;
-        $('html, body').animate({scrollTop: target_top}, 0, 'swing');
-    }
+    // var submitBack = localStorage.getItem('submitBack');
+    // if (submitBack == "YES") {
+    //     var scroll = $('.contact-block').offset();
+    //     var target_top = scroll.top - 50;
+    //     $('html, body').animate({scrollTop: target_top}, 0, 'swing');
+    // }
 
-    $(".form-bottom .btn-form input").click(function () {
-        localStorage.removeItem("submitBack");
-    })
+    localStorage.removeItem("submitBack");
 
-    // let isRecaptchaValidated = false;
-    //
-    // function toggleRecaptchaFormMessage(type = "error", hide = false) {
-    //     if(type == "error"){
-    //         $("#recaptcha-form-error").css("display", "block");
-    //     }
-    // }
-    //
-    // function onRecaptchaSuccess() {
-    //     isRecaptchaValidated = true;
-    // }
-    //
-    // function onRecaptchaError() {
-    //     toggleRecaptchaFormMessage("error");
-    //     toggleRecaptchaFormMessage("success", true);
-    // }
-    //
-    // function onRecaptchaResponseExpiry() {
-    //     onRecaptchaError();
-    // }
-    //
-    // window.onload = function () {
-    //     $(".contact-block .mw_wp_form:not(.mw_wp_form_confirm) form").on("submit", function (e) {
-    //
-    //         // failure
-    //         if (!isRecaptchaValidated) {
-    //             toggleRecaptchaFormMessage("error");
-    //             toggleRecaptchaFormMessage("success", true);
-    //             e.preventDefault();
-    //         }
-    //
-    //         // success
-    //         toggleRecaptchaFormMessage("error", true);
-    //         toggleRecaptchaFormMessage("success");
-    //         localStorage.setItem('reCaptcha', 'YES');
-    //     });
-    // };
-    //
-    // $(document).ready(function(){
-    //     if($(".contact-block .error").length){
-    //         if (!isRecaptchaValidated) {
-    //             toggleRecaptchaFormMessage("error");
-    //             toggleRecaptchaFormMessage("success", true);
-    //         }
-    //     }
-    // })
 
 });
