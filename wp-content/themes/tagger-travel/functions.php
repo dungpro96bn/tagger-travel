@@ -141,7 +141,7 @@ function languageString ()
     $brPc = "<br class='pc-br'/>";
 
     if ($current_language == 'vi') {
-        $var['btn_contact'] = "Liên hệ";
+        $var['btn_contact'] = "Xem thêm";
         $var['text_privacy'] = "Chính sách bảo mật";
         $var['language_option_title'] = "Ngôn ngữ";
         $var['contact_note_click_tel'] = "Bạn có thể thực hiện cuộc gọi bằng cách nhấn vào số";
@@ -150,7 +150,7 @@ function languageString ()
         $var['contact_sub_title'] = "Liên Hệ";
 
     } elseif ($current_language == 'en'){
-        $var['btn_contact'] = "CONTACT";
+        $var['btn_contact'] = "VIEW MORE";
         $var['text_privacy'] = "Privacy policy";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "You can make a call by tapping the number";
@@ -159,7 +159,7 @@ function languageString ()
         $var['contact_sub_title'] = "Contact us";
 
     } else{
-        $var['btn_contact'] = "CONTACT";
+        $var['btn_contact'] = "VIEW MORE";
         $var['text_privacy'] = "プライバシーポリシー";
         $var['language_option_title'] = "LANGUAGE";
         $var['contact_note_click_tel'] = "番号タップでお電話かけられます";
