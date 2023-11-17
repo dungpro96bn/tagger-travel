@@ -1209,9 +1209,15 @@
         grid-template-columns: repeat(1, 1fr);
         row-gap: 20px;
     }
-
-
-
+    .contact-block .mw_wp_form_confirm .field-group .input-field{
+        padding-top: 0;
+    }
+    .contact-block .mw_wp_form_confirm .field-group .title{
+        margin-bottom: 10px;
+    }
+    .contact-block .mw_wp_form_confirm .field-group {
+        margin-bottom: 30px;
+    }
 
 
 
