@@ -7,6 +7,7 @@
 # you can delete this whole section/until Configuration.
 /wp-admin/
 /wp-includes/
+/wp-content/uploads/mw-wp-form_uploads/
 /index.php
 /license.txt
 /readme.html
