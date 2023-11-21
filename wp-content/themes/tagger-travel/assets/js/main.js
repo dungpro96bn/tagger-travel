@@ -42,6 +42,29 @@ jQuery(function ($) {
         localStorage.setItem('sendmail', 'complete');
     });
 
+    $(".page-privacy-policy .footer__navSub__item a, .page-privacy-policy #navList-menu .menu-item a, .page-privacy-policy #header-menu .header-nav .contact-action a").click(function () {
+        var url = $(this).attr('href');
+        localStorage.setItem('clickLink', url);
+        var strHref = window.location.href,
+            href = strHref.replace('privacy-policy/', '');
+        window.location.replace(href);
+    });
+
+    $(document).ready(function () {
+        var checkClick = localStorage.getItem('clickLink');
+        if(checkClick){
+            var dest = checkClick.split('#');
+            var target = dest[1];
+            var target_offset = $('#'+target).offset();
+            var target_top = target_offset.top - 70;
+            $('html, body').animate({scrollTop:target_top}, 0, 'swing');
+            setTimeout((function() {
+                    localStorage.removeItem('clickLink');
+                }
+            ), 3000);
+        }
+    });
+
     //scroll
     $(function(){
         $('.scroll').click(function(event){event.preventDefault();

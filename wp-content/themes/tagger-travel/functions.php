@@ -27,6 +27,16 @@ function my_theme_widgets_init() {
 }
 add_action('widgets_init', 'my_theme_widgets_init');
 
+function pine_add_page_slug_body_class( $classes ) {
+    global $post;
+
+    if ( isset( $post ) ) {
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'pine_add_page_slug_body_class' );
+
 //パンくずリスト
 function breadcrumb($divOption = array("id" => "breadcrumb", "class" => "breadcrumb")){
 	global $post;
