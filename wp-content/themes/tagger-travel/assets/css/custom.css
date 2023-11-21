@@ -47,6 +47,9 @@
     line-height: 1.5;
     margin-bottom: 24px;
 }
+#privacy .privacy-content a{
+    text-decoration: underline;
+}
 #privacy .privacy-content p:last-child,
 #privacy .privacy-content dd:last-child{
     margin-bottom: 0;

@@ -42,7 +42,8 @@ jQuery(function ($) {
         localStorage.setItem('sendmail', 'complete');
     });
 
-    $(".page-privacy-policy .footer__navSub__item a, .page-privacy-policy #navList-menu .menu-item a, .page-privacy-policy #header-menu .header-nav .contact-action a").click(function () {
+    $(".page-privacy-policy .footer__navSub__item a, .page-privacy-policy #navList-menu .menu-item a, .page-privacy-policy #header-menu .header-nav .contact-action a").click(function (event) {
+        event.preventDefault();
         var url = $(this).attr('href');
         localStorage.setItem('clickLink', url);
         var strHref = window.location.href,
