@@ -47,7 +47,11 @@
         <div class="footer-bottom">
             <div class="inner footer-inner-bottom">
                 <div class="privacy-link">
-                    <a target="_blank" href="/privacy-policy/"><?php echo $var['text_privacy']; ?></a>
+                    <a target="_blank" href="<?php if ($current_language == "vi") {
+                        echo "/vi";
+                    } elseif ($current_language == "en") {
+                        echo "/en";
+                    } ?>/privacy-policy/"><?php echo $var['text_privacy']; ?></a>
                 </div>
                 <div class="copyright">
                     <p>© TAGGER TRAVEL Co., Ltd.</p>
