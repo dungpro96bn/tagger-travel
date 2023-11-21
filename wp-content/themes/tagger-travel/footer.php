@@ -50,7 +50,7 @@
                     <a target="_blank" href="/privacy-policy/"><?php echo $var['text_privacy']; ?></a>
                 </div>
                 <div class="copyright">
-                    <p>© TAGGER JAPAN INC.</p>
+                    <p>© TAGGER TRAVEL Co., Ltd.</p>
                 </div>
             </div>
         </div>
