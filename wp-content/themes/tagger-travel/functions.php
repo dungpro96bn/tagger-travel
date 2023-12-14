@@ -171,7 +171,7 @@ function languageString ()
         $var['contact_sub_title'] = "Contact us";
 
     } else{
-        $var['btn_contact_header'] = "CONTACT";
+        $var['btn_contact_header'] = "お問い合わせ";
         $var['btn_contact'] = "VIEW MORE";
         $var['text_privacy'] = "プライバシーポリシー";
         $var['language_option_title'] = "LANGUAGE";
