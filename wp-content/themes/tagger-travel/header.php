@@ -127,7 +127,7 @@ $current_language = $sitepress->get_current_language();
                     }
                 </script>
                 <div class="contact-action">
-                    <a class="scroll contact-btn btn-green <?php if ($current_language != "vi") { echo "en";}?>" href="#contact"><?php echo $var['btn_contact_header']; ?></a>
+                    <a class="scroll contact-btn btn-green <?php if ($current_language == "en") { echo "en";}?>" href="#contact"><?php echo $var['btn_contact_header']; ?></a>
                 </div>
             </div>
             <div class="btn-openMenu">
