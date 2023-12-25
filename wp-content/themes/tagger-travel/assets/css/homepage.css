@@ -10,8 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 854px;
-    padding-top: 63px;
+    height: calc(100vh - 70px);
 }
 #homepage .bannerHomepage .banner-heading{
     text-align: center;
