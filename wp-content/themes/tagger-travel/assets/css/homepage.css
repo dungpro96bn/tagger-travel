@@ -123,6 +123,11 @@
     align-items: center;
     margin-bottom: 43px;
 }
+#homepage .service-block .serviceItem-tabScroll:nth-child(1) .title{
+    max-width: 120px;
+    margin: 0 auto 43px;
+    text-align: left;
+}
 #homepage .service-block .serviceItem-tabScroll.text-vi .serviceItem-inner{
     max-width: 160px;
 }
