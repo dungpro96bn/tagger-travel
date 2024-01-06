@@ -310,17 +310,24 @@
 #homepage .company-block .mapList .mapItem {
     background: #F7F7F7;
     padding: 68px 40px 62px;
+    width: calc(50% - 20px);
+}
+#homepage .company-block .mapList .mapItem:first-child{
+    width: 100%;
 }
 #homepage .company-block .mapList{
     padding: 0 62px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 40px;
     row-gap: 64px;
 }
 #homepage .company-block .mapList .mapItem .map{
     position: relative;
     padding-bottom: 62.5%;
+}
+#homepage .company-block .mapList .mapItem:first-child .map{
+    padding-bottom: 30%;
 }
 #homepage .company-block .mapList .mapItem .map iframe{
     position: absolute;
@@ -1060,6 +1067,7 @@ body .contact-block .wpcf7 form .wpcf7-response-output{
         padding: 24px 0;
     }
     #homepage .company-block .mapList{
+        display: grid;
         grid-template-columns: repeat(1,1fr);
         padding: 0;
         row-gap: 32px;
@@ -1087,6 +1095,10 @@ body .contact-block .wpcf7 form .wpcf7-response-output{
     }
     #homepage .company-block .mapList .mapItem {
         padding: 33px 16px 37px;
+        width: 100%;
+    }
+    #homepage .company-block .mapList .mapItem:first-child .map{
+        padding-bottom: 62.5%;
     }
 
 
