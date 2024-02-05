@@ -34,9 +34,9 @@
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css?ver=<?php echo rand(); ?>">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage-kv.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css?ver=<?php echo rand(); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/pro.js" crossorigin="anonymous"></script>
@@ -48,7 +48,7 @@
 
     <!--file js-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js?ver=<?php echo rand(); ?>"></script>
 
     <?php if (is_admin_bar_showing()): ?>
         <style type="text/css" media="screen">
